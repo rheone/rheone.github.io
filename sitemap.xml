@@ -1,0 +1,20 @@
+<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://rheone.github.io/</loc>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://rheone.github.io/index.html</loc>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://rheone.github.io/resume.html</loc>
+<priority>0.90</priority>
+</url>
+<url>
+<loc>https://rheone.github.io/projects.html</loc>
+<priority>0.50</priority>
+</url>
+<url>
+</url>
+</urlset>
