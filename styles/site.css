@@ -16,6 +16,9 @@
   --site-font-mono:     "Fira Code", "JetBrains Mono", "Lucida Console", "Courier New", monospace;
   --site-navbar-height: 56px;
 
+  /* Override Bootstrap font stack to remove fonts blocked by Firefox fingerprinting resistance */
+  --bs-font-sans-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
   /* Override Bootstrap link colors to match accent */
   --bs-link-color:       #1a6fa8;
   --bs-link-hover-color: #14527f;
