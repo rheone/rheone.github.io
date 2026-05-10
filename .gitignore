@@ -1,0 +1,6 @@
+# Claude Code
+.claude/settings.local.json
+
+# VS Code
+.vscode/
+*.code-workspace

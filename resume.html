@@ -1,409 +1,535 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-bs-theme="light">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Robert H. Engelhardt - Resume</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.css"
-      integrity="sha512-LaxQmGd9k/pW51CsEy2nLIlbUXCgsyvUEVT5fSguN2b2OBwHjMi2aiUdEEXSMg8Jvy+bCB01as61aNrHnL2DYQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
-      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Résumé &mdash; Robert H. Engelhardt</title>
+  <meta name="description" content="Résumé for Robert H. Engelhardt — Distinguished Member of Technical Staff at Sandia National Laboratories. Over twenty years of software engineering experience supporting DOE and NNSA national security missions.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Résumé — Robert H. Engelhardt">
+  <meta property="og:description" content="Distinguished Member of Technical Staff at Sandia National Laboratories. Software architect, open-source author, and conference speaker.">
+  <meta property="og:image" content="https://rheone.github.io/images/avatar1024.png">
+  <meta property="og:url" content="https://rheone.github.io/resume.html">
+  <meta property="og:type" content="profile">
+
+  <!-- Author -->
+  <link type="text/plain" rel="author" href="https://rheone.github.io/humans.txt">
+
+  <!-- Dark mode: set before stylesheets to prevent flash -->
+  <script>
+    (function () {
+      var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-bs-theme', dark ? 'dark' : 'light');
+    })();
+  </script>
+
+  <!-- Fira Code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/firacode/6.2.0/fira_code.css"
+    integrity="sha512-LaxQmGd9k/pW51CsEy2nLIlbUXCgsyvUEVT5fSguN2b2OBwHjMi2aiUdEEXSMg8Jvy+bCB01as61aNrHnL2DYQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Bootstrap 5.3.3 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Font Awesome 6.7.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- Site styles -->
+  <link rel="stylesheet" href="styles/site.css">
 </head>
 
 <body>
-   <div class="container py-5">
 
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-         <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-            <img class="d-block mx-auto rounded-circle me-3" src="images/avatar256.png" width="32" height="32"
-               alt="a picture of Robert. He seems both concerned and introspective" />
-            <span class="fs-4">Robert H. Engelhardt</span>
-         </a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-md site-navbar fixed-top" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Robert H. Engelhardt</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fa-solid fa-house fa-sm me-1" aria-hidden="true"></i>Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="resume.html">
+              <i class="fa-solid fa-file-lines fa-sm me-1" aria-hidden="true"></i>Résumé
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">
+              <i class="fa-solid fa-code fa-sm me-1" aria-hidden="true"></i>Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="attributions.html">
+              <i class="fa-solid fa-heart fa-sm me-1" aria-hidden="true"></i>Attributions
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main class="container py-4 py-md-5">
+    <div class="col-12 col-md-11 col-lg-10 col-xl-9 mx-auto">
+
+      <!-- Resume header -->
+      <header class="d-flex align-items-center gap-4 mb-5 pb-4 border-bottom" aria-label="Resume header">
+        <img src="images/avatar256.png" width="80" height="80" loading="lazy" alt="Robert H. Engelhardt"
+          class="rounded-circle flex-shrink-0" style="border: 2px solid var(--site-border); object-fit: cover;">
+        <div>
+          <h1 class="fw-bold mb-1" style="font-size: 1.75rem;">Robert H. Engelhardt</h1>
+          <p class="mb-1" style="color: var(--site-muted);">Distinguished Member of Technical Staff (DMTS) &middot; R&amp;D S&amp;E, Computer Science</p>
+          <p class="mb-0" style="font-size: 0.9rem;">
+            <a href="mailto:rheone@gmail.com">
+              <i class="fa-regular fa-envelope fa-sm me-1" aria-hidden="true"></i>rheone@gmail.com
+            </a>
+          </p>
+        </div>
       </header>
 
-      <header class="text-center mb-4">
-
-         <h1 class="display-4">Robert H. Engelhardt</h1>
-         <p class="lead">DMTS R&D S&E, Computer Science</p>
-         <ul class="list-inline">
-            <li class="list-inline-item"><i class="fas fa-envelope"></i> <a
-                  href="mailto:rheone@gmail.com">rheone@gmail.com</a></li>
-         </ul>
-      </header>
-
-      <section>
-         <h2><i class="fas fa-user"></i> Summary</h2>
-         <p><i>With over eighteen years of experience as a professional software developer, I have provided support to
-               the National Nuclear Security Administration (NNSA) and the Department of Energy (DOE) in
-               mission-critical activities. I have spent the last eleven years at Sandia National Laboratories (SNL),
-               and previously worked at the Kansas City National Security Campus (KCNSC). I have led multiple projects
-               and teams of developer and software adjacent positions, gaining a wide range of experience and technical
-               skills across various specialized disciplines, software domains, and integrated systems. My work has had
-               a positive impact on software development and architectural implementation at the laboratories, as well
-               as cyber security posture, network topology, and laboratory software systems. I have been instrumental in
-               fostering Agile methodologies, leading software development teams, mentoring interns, and staff members,
-               and providing guidance on development best practices and Computer Science related solutions. I am
-               recognized as a Subject Matter Expert (SME) and have regularly engaged with laboratory and non-laboratory
-               staff at conferences, presenting on a variety of topics. My expertise in software development has
-               influenced internal practices and procedures. I am the lead developer for three open-source software
-               packages and have been heavily involved in the creation of several products shared within the DOE/NNSA
-               ecosystem through the Government Use Notice (G.U.N.) process. My engagement in the software development
-               and team leads disciplines have been both personally rewarding and has shaped the perspectives of others
-               in the industry.</i></p>
+      <!-- Summary -->
+      <section class="resume-section" aria-labelledby="heading-summary">
+        <h2 class="section-heading" id="heading-summary">Summary</h2>
+        <p style="font-size: 0.925rem; line-height: 1.7;">
+          Distinguished Member of Technical Staff at Sandia National Laboratories with over twenty years of experience
+          designing, building, and leading enterprise-scale software systems in support of national security missions
+          for the Department of Energy (DOE) and the National Nuclear Security Administration (NNSA). Leads a portfolio
+          of over 30 active .NET products — spanning 80-plus deployments, 3.9 million lines of code, and 8.8 billion
+          database records that underpin laboratory-wide IT software infrastructure across networking, cybersecurity,
+          asset management, account management, and specialized internal customer software tooling. Drives Agile team
+          practices and DevSecOps adoption, including Software Bill of Materials (SBOM) generation and automated CI/CD
+          pipelines aligned with federal executive mandates. Recognized Subject Matter Expert across software
+          architecture, network infrastructure (DNS, DHCP, IPv6, IPAM), and application security; lead developer of
+          several open-source packages and a recurring speaker at national-laboratory and DOE technical conferences.
+        </p>
       </section>
 
-      <section>
-         <h2><i class="fas fa-check-circle"></i> Qualifications</h2>
-         <ul>
-            <li>DMTS R&D S&E Computer Scientist and project lead of an Agile software development team responsible for
-               the designing, development, maintenance, and deploying of over 30 software projects related to
-               enterprise-wide IT solutions for a national laboratory.</li>
-            <li>Extensive experience with C#, .NET Framework, .NET Core, ASP.NET, REST API usage and design, HTML, CSS,
-               and popular .NET Tools and Libraries and have used them to build enterprise-level applications.</li>
-            <li>Keen knowledge of software development best practices including Agile methodologies, Test Driven
-               Development (TDD), Domain Driven Design (DDD), and source control.</li>
-            <li>Advocate for software automation practices including automated testing, Continuous Integration (CI), and
-               Continuous Delivery (CD) (CI/CD).</li>
-            <li>Thorough capabilities in Software Architecture, Application Design, Computer Science practices and
-               paradigms, as well as a demonstrated language agnostic development skill set, and pattern repertoire
-               comprised of both Object-Oriented Design (OOP / OOD), Functional Programming (FP), and Structured
-               Programming methodologies for use in implementing software systems that are modular, maintainable, and
-               extensible</li>
-            <li>Proven software project leadership skills with experience in managing cross-functional teams, setting
-               clear goals and objectives, and ensuring that projects are completed on time within guidelines.</li>
-            <li>Demonstrated strong technical communication skills with the ability to effectively communicate complex
-               technical concepts to both technical and non-technical audiences having presented at multiple conferences
-               and summits.</li>
-            <li>Substantial experience with SQL, Java, jQuery, JavaScript, NHibernate, and Git.</li>
-            <li>Task-oriented self-motivated developer and lead capable of taking direction from multiple sources, with
-               experience working solo or on a team, as well as appropriate work task delegation ability.</li>
-            <li>Mentor to junior-level staff, interns, and new employees, guiding them in understanding Sandia behaviors
-               and principles and development goals as well as coaching teams to help guide them to solutions.</li>
-            <li>Advocate for web content accessibility, mobile first responsive web application design, and the .NET
-               ecosystem.</li>
-            <li>Background experience with digital logic design, embedded systems, micro-controller programming, and
-               programmable logic devices (PLD) implementation.</li>
-         </ul>
-      </section>
+      <!-- Experience -->
+      <section class="resume-section" aria-labelledby="heading-experience">
+        <h2 class="section-heading" id="heading-experience">Experience</h2>
 
-      <section>
-         <h2><i class="fas fa-briefcase"></i> Experience</h2>
-         <div class="mb-3">
-            <h3>Sandia National Laboratories</h3>
-            <p><strong>Responsible for enterprise encompassing IT solutions in support of national laboratories and
-                  mission
-                  as a project lead.</strong></p>
-            <p>
-               As a DMTS technical lead and co-project lead, I have been responsible for the software architecture,
-               design, development, and maintenance of multiple modern and legacy applications, encompassing both
-               server-side and client-side needs. I have been actively involved in engaging with customers, gathering,
-               and analyzing requirements, and providing solutions that meet their needs. I lead software development
-               practices, such as code reviews, and ensured the quality and maintainability of the code base. I have
-               also taken on the role of Subject Matter Expert (SME) in many avenues and have been responsible for
-               disseminating technical documentation and best practices across multiple teams. My role included leading
-               and coordinating the efforts of a cross-functional team and have been instrumental in ensuring the timely
-               delivery of projects while maintaining a high level of quality.
-            </p>
+        <!-- Sandia National Laboratories -->
+        <div class="resume-employer">
+          <h3 class="resume-employer-name">Sandia National Laboratories</h3>
+          <p class="resume-employer-tenure">July 2012 to Present &middot; Albuquerque, NM</p>
 
-            <h4>Distinguished Member of Technical (DMTS) Staff R&D S&E, Computer Science</h4>
-            <p><em>July 2024 to Present</em></p>
-
+          <div class="resume-entry">
+            <h4 class="resume-entry-title">Distinguished Member of Technical Staff (DMTS), R&amp;D S&amp;E, Computer Science</h4>
+            <p class="resume-entry-dates">July 2024 to Present</p>
             <ul>
-               <li>Technical and project lead to over 30 software projects consisting of more than 80 deployments, 3.9
-                  million lines of code, and 8.8 billion database records; these solutions provide capabilities for the
-                  team, the laboratory, the inter-laboratory environment, and the -open-source domain.</li>
-               <li>Coordinated solutions with multiple Sandia infrastructure teams and directed the introduction of
-                  modernized IPv6 and DNS into Sandia's custom DDI and IPAM system. This is an on-going multi-year
-                  project directly related to IPv6 DOE Mandates that has cascading affects across the majority of the
-                  Sandia IT Infrastructure.</li>
-               <li>Orchestrated the software side replacement of legacy ITSM connectivity to modernized ServiceNow
-                  integration for several of Sandia's IT technical management systems.</li>
-               <li>Lead the retirement of multiple legacy software systems with a modernized superseding solution.</li>
-
+              <li>Lead a portfolio of over 30 software products across 80-plus deployments, 3.9 million lines of code,
+                and 8.8 billion database records, delivering mission-enabling capabilities for the laboratory, the
+                inter-laboratory DOE/NNSA ecosystem, and the open-source community.</li>
+              <li>Direct the ongoing multi-year modernization of Sandia's custom DNS, DHCP, and IP Address Management
+                (DDI/IPAM) network management system to introduce IPv6 and contemporary DNS capabilities, driving
+                compliance with DOE federal IPv6 mandates and producing cascading improvements across the majority of
+                Sandia's IT infrastructure.</li>
+              <li>Design and lead the migration of legacy IT Service Management (ITSM) integrations to a modernized
+                ServiceNow REST API architecture for multiple Sandia technical management systems, improving reliability
+                and reducing manual operational overhead.</li>
+              <li>Drive the planned decommission of multiple aging software systems, delivering modernized replacement
+                solutions that reduce technical debt and improve long-term supportability.</li>
             </ul>
+          </div>
 
-            <h4>Principal R&D S&E, Computer Science</h4>
-            <p><em>May 2020 to July 2024</em></p>
-
-            <p>
-               <strong>
-                  Responsible for enterprise encompassing IT solutions in support of national laboratories and mission
-                  as a project lead.
-               </strong>
-            </p>
-            <p>
-               As a project and technical lead, I have been responsible for the software architecture, design,
-               development, and maintenance of multiple modern and legacy applications, encompassing both server-side
-               and client-side needs. I have been actively involved in engaging with customers, gathering, and analyzing
-               requirements, and providing solutions that meet their needs. I lead software development practices, such
-               as code reviews, and ensured the quality and maintainability of the code base. I have also taken on the
-               role of Subject Matter Expert (SME) in many avenues and have been responsible for disseminating technical
-               documentation and best practices across multiple teams. My role included leading and coordinating the
-               efforts of a cross-functional team and have been instrumental in ensuring the timely delivery of projects
-               while maintaining a high level of quality.
-            </p>
-
+          <div class="resume-entry">
+            <h4 class="resume-entry-title">Principal R&amp;D S&amp;E, Computer Science</h4>
+            <p class="resume-entry-dates">May 2020 to July 2024</p>
             <ul>
-               <li>Lead my team and paving the road for Sandia's compliance with the Executive Order on Improving the
-                  Nation's Cybersecurity (EO 14028) by generating a Software Bills of Materials as a matter of course in
-                  our products.</li>
-               <li>Designed a software solution for, and lead the cross-team implementation of, classified computer
-                  hardware lifecycle management tooling alongside the hardware disposition team providing for better
-                  management of security significant computing resources and better observability of concerns allowing
-                  the avoidance of future incidents.</li>
-               <li>Planned, organized, road mapped, and distributed tasking for software projects to a team comprised of
-                  developers, devops engineers, and interns.</li>
-               <li>Released enhancements to existing software systems and improved software capabilities of partners and
-                  customers though new capabilities and services.</li>
-               <li>Spearheaded improvements to internal development practices and in-team mentorship of early career
-                  software developers.</li>
-               <li>SME both to team and to multiple external customers across the laboratory including networking
-                  infrastructure, IT infrastructure, and cyber security.</li>
+              <li>Established Software Bill of Materials (SBOM) generation as standard practice across the team's
+                product portfolio, positioning Sandia proactively ahead of compliance requirements codified in
+                Executive Order 14028 (Improving the Nation's Cybersecurity).</li>
+              <li>Designed and led cross-team implementation of a classified computing asset lifecycle management
+                system alongside the hardware disposition team, improving observability into security-significant
+                resources and enabling avoidance of future compliance incidents.</li>
+              <li>Managed project roadmaps, tasking, and delivery coordination for a cross-functional team of software
+                developers, DevOps engineers, and interns across multiple concurrent software projects.</li>
+              <li>Served as Subject Matter Expert to laboratory networking infrastructure, IT infrastructure, and
+                cybersecurity teams, resolving complex architectural and security concerns across multiple
+                organizational boundaries.</li>
+              <li>Drove adoption of improved internal development practices including structured code reviews,
+                automated test coverage expectations, and a mentorship program for early-career developers.</li>
             </ul>
+          </div>
 
-            <h4>Senior R&D S&E, Computer Science</h4>
-            <p><em>July 2012 to May 2020</em></p>
-
-            <p>
-               <strong>
-                  Acting, and actual, project lead responsible for enterprise encompassing IT solutions in support of
-                  the national laboratories and mission.
-               </strong>
-            </p>
-            <p>
-               As a technical lead, I have been responsible for the design, development, and deployment of
-               enterprise-wide IT solutions in support of the national laboratories and mission. I have played a key
-               role in leading and coordinating the efforts of cross-functional teams and have been responsible for
-               ensuring the timely delivery of projects while maintaining a high level of quality. I have a proven track
-               record of delivering successful projects and have been recognized for my ability to lead and manage
-               projects from early conception to deployment throughout a products lifetime.
-            </p>
-
+          <div class="resume-entry">
+            <h4 class="resume-entry-title">Senior R&amp;D S&amp;E, Computer Science</h4>
+            <p class="resume-entry-dates">July 2012 to May 2020</p>
             <ul>
-               <li>Modernized Sandia's custom IP Address Management System (IPAM), DNS, DHCP, and IPAM (DDI) solution,
-                  NWIS, to allow programmatic customer self service via a RESTful API.</li>
-               <li>Created and implemented a multifaceted web application, Software Asset Management Systems (SAMS),
-                  used to manage software licensing assets for the laboratory that has resulted in savings of over one
-                  million dollars yearly.</li>
-               <li>Built and co-designed Network Infrastructure Computing Kit (NICK), a tool for managing and
-                  visualizing aspects of Sandia's network configuration from IP Address to network configuration, and
-                  DNS topology.</li>
-               <li>Constructed the Vulnerability Assessment Scanning Tool (VAST) API, which is used to improve cyber
-                  security posture and allows Sandia's computing infrastructure users and administrators to stay abreast
-                  of the security significant findings on their peripherals.</li>
-               <li>Created and co-created a multitude specialized tools used to run and inform usage of Sandia's IT
-                  infrastructure.</li>
-               <li>Developed and improved high-impact modern and legacy applications that support the laboratory IT
-                  infrastructure.</li>
-               <li>Developed the server-side component of Network Disconnect, a product used to initiate and track
-                  security-based requests to disconnect network devices from multiple networks covering over 100K
-                  network connected devices.</li>
-               <li>Engineered and developed Reliable Automated File Transfer Service (RAFTS), a pair of server-side
-                  software products that supports the transfer of large data sets across multiple security domains.</li>
-               <li>Implemented and co-developed the Mobile Credential Manager (MCM), a solution for managing derived
-                  HSPD-12 credential on mobile devices granting members of the workforce access to Sandia resources
-                  without the need for alternative complex authorization mechanisms.</li>
-               <li>Introduced multiple RESTful API web services granting customers and partners the ability to
-                  self-serve data needs and propagate change across laboratory information and configuration systems.
-               </li>
-               <li>Designed and maintained sets of internal software development libraries to increase coding efficiency
-                  and improve the testability and reliability of related products.</li>
-               <li>Released, developed, and maintained multiple open-source project packages to enrich the local and
-                  global software development posture.</li>
+              <li>Delivered savings of well over one million dollars annually by designing and implementing the
+                Software Asset Management System (SAMS), a full-stack ASP.NET web application that centralized
+                software licensing lifecycle management across the laboratory.</li>
+              <li>Modernized the lab-wide Network Information System (NWIS) — Sandia's custom DNS, DHCP, and IP
+                Address Management (DDI/IPAM) solution — by introducing a RESTful API layer that enabled
+                programmatic, self-service network management for customers across the laboratory.</li>
+              <li>Built the server-side component of Network Disconnect, a security-operations tool that tracks and
+                processes requests to isolate compromised or unauthorized network devices, covering over 100,000
+                network-connected endpoints.</li>
+              <li>Engineered the Reliable Automated File Transfer Service (RAFTS), a set of .NET C# REST APIs
+                supporting large-scale data transfer across multiple classified and unclassified network security
+                domains.</li>
+              <li>Implemented the Mobile Credential Manager (MCM), a .NET web application enabling laboratory
+                workforce members to self-manage derived Personal Identity Verification (PIV) mobile credentials —
+                as specified under Homeland Security Presidential Directive 12 (HSPD-12) — for remote authentication
+                to Sandia resources.</li>
+              <li>Delivered the Vulnerability Assessment Scanning Tool (VAST) API, enabling computing infrastructure
+                users and administrators to programmatically query and act on security-significant findings across
+                their network-connected assets.</li>
+              <li>Co-designed the Network Infrastructure Computing Kit (nick), a visualization and management tool
+                spanning Sandia's network topology from IP addressing and device configuration to DNS structure.</li>
+              <li>Introduced RESTful API web services and shared internal .NET development libraries that improved
+                development consistency, customer self-service capability, and test coverage reliability across the
+                team's product portfolio.</li>
             </ul>
+          </div>
+        </div>
 
-         </div>
-         <div class="mb-3">
-            <h3>Honeywell Federal Manufacturing and Technologies</h3>
-            <h4>Application Developer Analyst II</h4>
-            <p><em>June 2006 to July 2012</em></p>
-            <p>As a technical project lead, I was responsible for directing, maintaining, guiding, developing, and
-               supporting the architectural design and codebase of several Java-centric web applications for customers
-               including the National Nuclear Security Administration (NNSA) and the Department of Energy (DOE).</p>
+        <!-- Honeywell -->
+        <div class="resume-employer">
+          <h3 class="resume-employer-name">Honeywell Federal Manufacturing and Technologies</h3>
+          <p class="resume-employer-tenure">June 2006 to July 2012 &middot; Albuquerque, NM</p>
+
+          <div class="resume-entry">
+            <h4 class="resume-entry-title">Application Developer Analyst II</h4>
+            <p class="resume-entry-dates">June 2006 to July 2012</p>
             <ul>
-               <li>Technical Lead for a web application suite and information hub for NNSA/DOE's Office of Operations
-                  and Exercise (NA-42).</li>
-               <li>Constructed and maintained a badging and physical credential management software system for
-                  government agents.</li>
-               <li>Designed and implemented a remotely accessible communication data-sharing, and information repository
-                  for NNSA First Responders and cross-departmental access.</li>
-               <li>Developed a training and qualification tracking system for government agents.</li>
+              <li>Served as technical lead for a Java-based web application suite and information hub supporting
+                NNSA's Office of Operations and Exercise (NA-42), coordinating development and maintenance across a
+                cross-functional team.</li>
+              <li>Built and maintained a physical credential and badging management software system for government
+                security personnel.</li>
+              <li>Designed and implemented a secure, remotely accessible data-sharing and information repository for
+                NNSA First Responders and cross-departmental users.</li>
+              <li>Developed a training and qualification tracking system for government personnel.</li>
             </ul>
-         </div>
+          </div>
+        </div>
 
-         <div class="mb-3">
-            <h3>NCR and First Line Solutions</h3>
-            <h4>Customer Field Engineer</h4>
-            <p><em>June 2004 to June 2006</em></p>
-            <p>Responsible for technical support and hardware installations across various. This included
-               troubleshooting and resolving technical issues, providing on-site support, configuring, and maintaining
-               hardware and software systems, and performing software and hardware upgrades. I was responsible for
-               ensuring that the systems are configured and maintained to meet customer requirements and providing
-               support to end-users.</p>
+        <!-- NCR -->
+        <div class="resume-employer">
+          <h3 class="resume-employer-name">NCR and First Line Solutions</h3>
+          <p class="resume-employer-tenure">June 2004 to June 2006</p>
+
+          <div class="resume-entry">
+            <h4 class="resume-entry-title">Customer Field Engineer</h4>
+            <p class="resume-entry-dates">June 2004 to June 2006</p>
             <ul>
-               <li>Delivered troubleshooting, maintenance, and installation of back-office hardware systems.</li>
-               <li>Installed a wide variety of hardware deliverables and completed projects of differing environments.
-               </li>
+              <li>Delivered on-site troubleshooting, installation, and maintenance of back-office hardware systems
+                for customers across diverse retail and commercial environments.</li>
             </ul>
-         </div>
+          </div>
+        </div>
 
-         <h3>Sandia National Laboratories</h3>
-         <h4>Student Internship Program Gen Tech</h4>
-         <p><em>April 2001 to August 2021</em></p>
+        <!-- Sandia internships -->
+        <div class="resume-employer">
+          <h3 class="resume-employer-name">Sandia National Laboratories — Student Internships</h3>
+          <p class="resume-employer-tenure">Summer 2000 and Summer 2001</p>
 
-         <ul>
-            <li>Involved with the design and maintenance of a Visual Basic application for tracking information related
-               to nuclear proliferation data tracking.</li>
-         </ul>
-
-         <h4>Student Internship Program Gen Tech</h4>
-         <p><em>April 2000 to August 2020</em></p>
-
-         <ul>
-            <li>Involved with the maintenance and functional enhancement of Borland Builder C++ Windows application for
-               the fabrication of semiconductor design.</li>
-         </ul>
-
+          <div class="resume-entry">
+            <h4 class="resume-entry-title">Student Internship Program, Gen Tech</h4>
+            <p class="resume-entry-dates">Summer 2000 and Summer 2001</p>
+            <ul>
+              <li>Contributed to a Visual Basic application for nuclear proliferation data tracking (2001) and to a
+                Borland C++ Builder Windows application for semiconductor fabrication design (2000).</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section>
-         <h2><i class="fas fa-code"></i> Open-Source Projects</h2>
-         <h3>NetDuid</h3>
-         <p><strong><a href="https://github.com/sandialabs/netduid"><i class="fab fa-github"></i> NetDuid on
-                  GitHub</a></strong></p>
-         <p><i>A robust and efficient .NET representation of DHCP Unique Identifiers (DUIDs) as specified in RFC 8415
-               and RFC 6355</i></p>
+      <!-- Languages & Technologies -->
+      <section class="resume-section" aria-labelledby="heading-skills">
+        <h2 class="section-heading" id="heading-skills">Languages &amp; Technologies</h2>
 
-         <h3>Arcus</h3>
-         <p><strong><a href="https://github.com/sandialabs/arcus"><i class="fab fa-github"></i> Arcus on GitHub</a></strong>
-         </p>
-         <p><i>A networking concept related .NET C# library for calculating, parsing, formatting, converting, and
-               comparing IPv4 and IPv6 addresses and subnets, and the manipulation of MAC Address data formats.</i></p>
+        <span class="skill-category-label">Languages</span>
+        <div class="mb-1">
+          <span class="skill-badge">C#</span>
+          <span class="skill-badge">SQL</span>
+          <span class="skill-badge">HTML</span>
+          <span class="skill-badge">CSS</span>
+          <span class="skill-badge">PowerShell</span>
+        </div>
 
-         <h3>Gulliver</h3>
-         <p><strong><a href="https://github.com/sandialabs/gulliver"><i class="fab fa-github"></i> Gulliver on
-                  GitHub</a></strong></p>
-         <p><i>A bitwise mathematics .NET C# utility package designed for the manipulation of arbitrary sized byte
-               arrays as numerical objects accounting for appropriate variable length storage and manipulation of
-               endianness.</i></p>
+        <span class="skill-category-label">Frameworks &amp; Runtimes</span>
+        <div class="mb-1">
+          <span class="skill-badge">ASP.NET 4.8</span>
+          <span class="skill-badge">.NET Core</span>
+          <span class="skill-badge">.NET 5–10</span>
+          <span class="skill-badge">NHibernate</span>
+        </div>
 
-         <h3>Chordly</h3>
-         <p><strong><a href="https://github.com/sandialabs/chordly"><i class="fab fa-github"></i> Chordly on
-                  GitHub</a></strong></p>
-         <p><i>A JavaScript library focused on keyboard-based user experience and user accessibility for web-based media
-               and applications.</i></p>
+        <span class="skill-category-label">APIs &amp; Integration</span>
+        <div class="mb-1">
+          <span class="skill-badge">REST API Design</span>
+          <span class="skill-badge">REST API Implementation</span>
+          <span class="skill-badge">ServiceNow</span>
+        </div>
+
+        <span class="skill-category-label">DevOps &amp; Tooling</span>
+        <div class="mb-1">
+          <span class="skill-badge">Git</span>
+          <span class="skill-badge">Azure DevOps</span>
+          <span class="skill-badge">CI/CD Pipelines</span>
+        </div>
+
+        <span class="skill-category-label">Domains</span>
+        <div class="mb-1">
+          <span class="skill-badge">Software Architecture</span>
+          <span class="skill-badge">DevSecOps</span>
+          <span class="skill-badge">Application Security</span>
+          <span class="skill-badge">SBOM</span>
+          <span class="skill-badge">DNS</span>
+          <span class="skill-badge">DHCP</span>
+          <span class="skill-badge">IPv6</span>
+          <span class="skill-badge">IPAM</span>
+        </div>
       </section>
 
-      <section>
-         <h2><i class="fas fa-gavel"></i> Government Use Notice (G.U.N.) Projects</h2>
-         <h3>Reliable Automated File Transfer System (RAFTS)</h3>
-         <p><i>A Restful API driven cross-boundary computing service for transferring large data sets between networks
-               and security domains. The application suite includes Angular web-based user interfaces, multiple .NET C#
-               RESTful APIs, and a collection of scripts for automated processing.</i></p>
+      <!-- Open-Source Projects -->
+      <section class="resume-section" aria-labelledby="heading-oss">
+        <h2 class="section-heading" id="heading-oss">Open-Source Projects</h2>
 
-         <h3>Mobile Credential Manager (MCM)</h3>
-         <p><i>A .NET web-based application suite used for the self-management of loading and unloading
-               certificate-based credentials onto mobile-devices allowing Sandia users to authenticate remotely to
-               internal services from their mobile devices.</i></p>
+        <div class="project-card">
+          <h3 class="project-card-title">NetDuid</h3>
+          <p class="project-card-desc">A .NET library providing a robust, strongly-typed representation of DHCP
+            Unique Identifiers (DUIDs) as specified in RFC 8415 and RFC 6355. Supports parsing, construction,
+            comparison, and formatting operations across .NET Standard 2.0 and modern .NET runtimes.</p>
+          <div class="project-card-links">
+            <a href="https://github.com/sandialabs/netduid" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github fa-sm me-1" aria-hidden="true"></i>GitHub
+            </a>
+            <a href="https://www.nuget.org/packages/NetDuid" target="_blank" rel="noopener">
+              <img src="https://img.shields.io/nuget/dt/netduid?logo=nuget&label=NuGet" alt="NetDuid NuGet download count" loading="lazy" style="height:20px;vertical-align:middle;">
+            </a>
+          </div>
+          <div>
+            <span class="tech-pill">C#</span>
+            <span class="tech-pill">.NET</span>
+            <span class="tech-pill">DHCP</span>
+            <span class="tech-pill">DHCPv6</span>
+            <span class="tech-pill">RFC 8415</span>
+            <span class="tech-pill">RFC 6355</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-card-title">Arcus</h3>
+          <p class="project-card-desc">A .NET C# library for parsing, formatting, converting, comparing, and
+            manipulating IPv4 and IPv6 addresses, subnets, and MAC address data formats. Handles 128-bit
+            numbers on 32-bit platforms and supports subnet calculations across five functional areas.</p>
+          <div class="project-card-links">
+            <a href="https://github.com/sandialabs/Arcus" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github fa-sm me-1" aria-hidden="true"></i>GitHub
+            </a>
+            <a href="https://www.nuget.org/packages/Arcus" target="_blank" rel="noopener">
+              <img src="https://img.shields.io/nuget/dt/arcus?logo=nuget&label=NuGet" alt="Arcus NuGet download count" loading="lazy" style="height:20px;vertical-align:middle;">
+            </a>
+          </div>
+          <div>
+            <span class="tech-pill">C#</span>
+            <span class="tech-pill">.NET</span>
+            <span class="tech-pill">IPv4</span>
+            <span class="tech-pill">IPv6</span>
+            <span class="tech-pill">Networking</span>
+            <span class="tech-pill">Subnetting</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-card-title">Gulliver</h3>
+          <p class="project-card-desc">A .NET C# utility package for bitwise manipulation of arbitrary-length byte
+            arrays as numerical objects, with full support for variable-length storage and endianness. Provides
+            boolean algebraic operations, bitwise shifting, and unsigned endian-aware arithmetic.</p>
+          <div class="project-card-links">
+            <a href="https://github.com/sandialabs/Gulliver" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github fa-sm me-1" aria-hidden="true"></i>GitHub
+            </a>
+            <a href="https://www.nuget.org/packages/Gulliver" target="_blank" rel="noopener">
+              <img src="https://img.shields.io/nuget/dt/Gulliver?logo=nuget&label=NuGet" alt="Gulliver NuGet download count" loading="lazy" style="height:20px;vertical-align:middle;">
+            </a>
+          </div>
+          <div>
+            <span class="tech-pill">C#</span>
+            <span class="tech-pill">.NET</span>
+            <span class="tech-pill">Bitwise</span>
+            <span class="tech-pill">Byte Arrays</span>
+            <span class="tech-pill">Endianness</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-card-title">Chordly</h3>
+          <p class="project-card-desc">A JavaScript library for keyboard-driven user experience and web
+            accessibility in browser-based applications. Enables detection and handling of key sequences, chord
+            combinations, and Konami-style input patterns.</p>
+          <div class="project-card-links">
+            <a href="https://github.com/sandialabs/Chordly" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github fa-sm me-1" aria-hidden="true"></i>GitHub
+            </a>
+          </div>
+          <div>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">Keyboard</span>
+            <span class="tech-pill">Accessibility</span>
+            <span class="tech-pill">UX</span>
+          </div>
+        </div>
       </section>
 
-      <section>
-         <h2><i class="fa-solid fa-microphone"></i> Conferences and Speaking Engagements</h2>
+      <!-- GUN Projects -->
+      <section class="resume-section" aria-labelledby="heading-gun">
+        <h2 class="section-heading" id="heading-gun">Government Use Notice (G.U.N.) Projects</h2>
+        <div class="gun-note mb-3">
+          <i class="fa-solid fa-lock fa-sm me-1" aria-hidden="true"></i>
+          These projects were developed for and distributed within the DOE/NNSA ecosystem under the Government Use
+          Notice (G.U.N.) process. Source code is not publicly available.
+        </div>
 
-         <h3>National Laboratories Information Technology Summit</h3>
-         <ul>
-            <li>"Nerd Stuff for Non-Nerds" - 2022</li>
-            <li>"An Iteration in the Life of a Developer" - 2020</li>
-            <li>"IPv6 Big Numbers, Big Solutions" - 2016</li>
-            <li>Web Accessibility and Web Standards Birds of a Feather - 2016</li>
-            <li>"Mousehate: Increasing accessibility of Web Applications one QWERTY at a time" - 2014</li>
-         </ul>
+        <div class="resume-entry">
+          <h3 class="resume-entry-title">Reliable Automated File Transfer Service (RAFTS)</h3>
+          <p class="resume-entry-dates" style="margin-bottom: 0.5rem;">Sandia National Laboratories</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;">
+            A RESTful API-driven, cross-boundary computing service for transferring large data sets between networks
+            and classified security domains. The suite includes Angular web interfaces, multiple .NET C# REST APIs,
+            and automated processing scripts.
+          </p>
+        </div>
 
-         <h3>Interlab DOE Web Collaboration</h3>
-         <ul>
-            <li>"Mousehate: Increasing accessibility of Web Applications one QWERTY at a time" - 2013
-         </ul>
+        <div class="resume-entry">
+          <h3 class="resume-entry-title">Mobile Credential Manager (MCM)</h3>
+          <p class="resume-entry-dates" style="margin-bottom: 0.5rem;">Sandia National Laboratories</p>
+          <p style="font-size: 0.9rem; line-height: 1.6;">
+            A .NET web application suite for self-service management of certificate-based credentials on mobile
+            devices, enabling Sandia users to authenticate remotely to internal services without alternative
+            complex authorization mechanisms.
+          </p>
+        </div>
       </section>
 
-      <section>
-         <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-         <p>Bachelor of Science in Computer Science, The New Mexico Institute of Mining and Technology, Socorro, NM,
-            December 2004</p>
+      <!-- Conferences -->
+      <section class="resume-section" aria-labelledby="heading-conferences">
+        <h2 class="section-heading" id="heading-conferences">Conferences &amp; Speaking Engagements</h2>
+
+        <div class="resume-employer">
+          <h3 class="resume-employer-name">National Laboratories Information Technology Summit</h3>
+          <ul style="font-size: 0.9rem; line-height: 1.7; padding-left: 1.15rem;">
+            <li>&ldquo;Nerd Stuff for Non-Nerds&rdquo; &mdash; 2022</li>
+            <li>&ldquo;An Iteration in the Life of a Developer&rdquo; &mdash; 2020</li>
+            <li><a href="https://www.osti.gov/biblio/1365362" target="_blank" rel="noopener">&ldquo;IPv6 Big Numbers, Big Solutions&rdquo;</a> &mdash; 2016</li>
+            <li>Web Accessibility and Web Standards Birds of a Feather &mdash; 2016</li>
+            <li>&ldquo;Mousehate: Increasing Accessibility of Web Applications One QWERTY at a Time&rdquo; &mdash; 2014</li>
+          </ul>
+        </div>
+
+        <div class="resume-employer" style="margin-bottom: 0;">
+          <h3 class="resume-employer-name">Interlab DOE Web Collaboration</h3>
+          <ul style="font-size: 0.9rem; line-height: 1.7; padding-left: 1.15rem;">
+            <li><a href="https://www.osti.gov/biblio/1115288" target="_blank" rel="noopener">&ldquo;Mousehate: Increasing Accessibility of Web Applications One QWERTY at a Time&rdquo;</a> &mdash; 2013</li>
+          </ul>
+        </div>
       </section>
 
-      <section>
-         <h2><i class="fas fa-certificate"></i> Certifications</h2>
-         <ul>
-            <li>Active DOE Q level Clearance</li>
-            <li>Application Security and Secure Coding Training in .NET - 2020</li>
-            <li>Six Sigma Greenbelt - 2006</li>
-            <li>Six Sigma DFIT 2006 - 2006</li>
-         </ul>
+      <!-- Education -->
+      <section class="resume-section" aria-labelledby="heading-education">
+        <h2 class="section-heading" id="heading-education">Education</h2>
+        <div class="resume-entry">
+          <h3 class="resume-entry-title">Bachelor of Science, Computer Science</h3>
+          <p class="resume-entry-dates">December 2004</p>
+          <p style="font-size: 0.9rem; margin-bottom: 0;">New Mexico Institute of Mining and Technology &mdash; Socorro, NM</p>
+        </div>
       </section>
 
-      <section>
-         <h2><i class="fa-solid fa-user-tie"></i> Professional Memberships</h2>
-         <ul>
-            <li>Sandia Developer Tools Community of Practice</li>
-            <li>Sandia Security Champions</li>
-            <li>Sandia .NET User Group</li>
-         </ul>
+      <!-- Certifications -->
+      <section class="resume-section" aria-labelledby="heading-certs">
+        <h2 class="section-heading" id="heading-certs">Certifications</h2>
+        <ul style="font-size: 0.9rem; line-height: 1.8; padding-left: 1.15rem;">
+          <li>Active DOE Q-Level Security Clearance</li>
+          <li>Application Security and Secure Coding Training in .NET (2020)</li>
+          <li>Six Sigma Green Belt (2006)</li>
+          <li>Six Sigma DFIT (2006)</li>
+        </ul>
       </section>
 
-      <section>
-         <h2><i class="fas fa-award"></i> Awards and Nominations</h2>
-         <h3>Sandia National Laboratories</h3>
-         <ul>
-            <li>Thunderbird Kudos - 2023</li>
-            <li>Thunderbird Kudos - 2022</li>
-            <li>Retention Bonus - 2022</li>
-            <li>Spot Award for Network Information Systems (NWIS) ColdFusion Application Retirement - 2022</li>
-            <li>Employee Recognition Award (ERA) Nomination for Enterprise Cross Domain Solutions - 2021</li>
-            <li>ERA Nomination for Enterprise Person Application Transformation - 2021</li>
-            <li>Individual ERA Nomination for Arcus and Gulliver Open-Source Projects - 2019</li>
-            <li>ERA Nomination for Information Technology Service Management (ITSM) and Service Asset & Configuration
-               Management (SACM) - 2019</li>
-            <li>ERA Nomination for Network Disconnect - 2019</li>
-            <li>Spot Award for Leadership and Technical Contributions - 2018</li>
-            <li>ERA Winner for Mobile Credential Manager - 2017</li>
-            <li>ERA Nomination for IPv6 Deployment- 2016</li>
-            <li>Employee Kudos Award Nomination for Annual Licensing Tool Development - 2014</li>
-            <li>ERA Nomination for Infrastructure Computing Kit Development - 2014</li>
-            <li>ERA Nomination for Windows at Risk XP Migration - 2014</li>
-            <li>ERA Nomination for Windows at Risk Machine Tracking - 2013</li>
-         </ul>
+      <!-- Professional Memberships -->
+      <section class="resume-section" aria-labelledby="heading-memberships">
+        <h2 class="section-heading" id="heading-memberships">Professional Memberships</h2>
+        <ul style="font-size: 0.9rem; line-height: 1.8; padding-left: 1.15rem;">
+          <li>Sandia Developer Tools Community of Practice</li>
+          <li>Sandia Security Champions</li>
+          <li>Sandia .NET User Group</li>
+        </ul>
       </section>
 
-      <section>
-         <h2><i class="fa-solid fa-handshake-angle"></i> Volunteerism</h2>
-         <h3>Sandia National Laboratories</h3>
-         <ul>
-            <li>Modern Albuquerque Mid Mod Home Tour Docent - 2019</li>
-            <li>National Museum of Nuclear Science & History -- Einstein Gala & Auction - 2016</li>
-            <li>National Museum of Nuclear Science & History -- Fusion Lecturer & Demonstrator - 2016</li>
-            <li>National Museum of Nuclear Science & History -- Non-Newtonian Fluids Lecturer & Demonstrator - 2016</li>
-            <li>National Museum of Nuclear Science & History -- Einstein Gala & Auction - 2015</li>
-            <li>National Museum of Nuclear Science & History -- STEAM Day Docent - 2015</li>
-            <li>Sundance Elementary School Science Fair Judge - 2013</li>
-            <li>SolAmor Hospice -- Resident Companionship Volunteer - 2010 - 2011</li>
-            <li>New Mexico Beekeepers' Association Vice President 2010</li>
-         </ul>
+      <!-- Awards and Nominations -->
+      <section class="resume-section" aria-labelledby="heading-awards">
+        <h2 class="section-heading" id="heading-awards">Awards &amp; Nominations</h2>
+        <ul style="font-size: 0.9rem; line-height: 1.7; padding-left: 1.15rem;">
+          <li>Thunderbird Kudos &mdash; 2023</li>
+          <li>Thunderbird Kudos &mdash; 2022</li>
+          <li>Retention Bonus &mdash; 2022</li>
+          <li>Spot Award &mdash; ColdFusion Application Retirement (2022)</li>
+          <li>Employee Recognition Award (ERA) Nomination &mdash; Enterprise Cross Domain Solutions (2021)</li>
+          <li>ERA Nomination &mdash; Enterprise Person Application Transformation (2021)</li>
+          <li>ERA Nomination &mdash; Arcus and Gulliver Open-Source Projects (2019)</li>
+          <li>ERA Nomination &mdash; IT Service Management (ITSM) and Service Asset &amp; Configuration Management (SACM) (2019)</li>
+          <li>ERA Nomination &mdash; Network Disconnect (2019)</li>
+          <li>Spot Award &mdash; Leadership and Technical Contributions (2018)</li>
+          <li>ERA Winner &mdash; Mobile Credential Manager (2017)</li>
+          <li>ERA Nomination &mdash; IPv6 Deployment (2016)</li>
+          <li>ERA Nomination &mdash; Annual Licensing Tool Development (2014)</li>
+          <li>ERA Nomination &mdash; Infrastructure Computing Kit Development (2014)</li>
+          <li>ERA Nomination &mdash; Windows at Risk XP Migration (2014)</li>
+          <li>ERA Nomination &mdash; Windows at Risk Machine Tracking (2013)</li>
+        </ul>
       </section>
 
-      <footer class="text-center mt-5">
-         <p>© 2025 Robert H. Engelhardt</p>
-      </footer>
-   </div>
+      <!-- Volunteerism -->
+      <section class="resume-section" aria-labelledby="heading-volunteer">
+        <h2 class="section-heading" id="heading-volunteer">Volunteerism</h2>
+        <ul style="font-size: 0.9rem; line-height: 1.7; padding-left: 1.15rem;">
+          <li>Modern Albuquerque Mid Mod Home Tour Docent &mdash; 2019</li>
+          <li>National Museum of Nuclear Science &amp; History &mdash; Einstein Gala &amp; Auction &mdash; 2016 and 2015</li>
+          <li>National Museum of Nuclear Science &amp; History &mdash; Fusion and Non-Newtonian Fluids Lecturer &amp; Demonstrator &mdash; 2016</li>
+          <li>National Museum of Nuclear Science &amp; History &mdash; STEAM Day Docent &mdash; 2015</li>
+          <li>Sundance Elementary School Science Fair Judge &mdash; 2013</li>
+          <li>SolAmor Hospice &mdash; Resident Companionship Volunteer &mdash; 2010&ndash;2011</li>
+          <li>New Mexico Beekeepers&rsquo; Association Vice President &mdash; 2010</li>
+        </ul>
+      </section>
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
-      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container text-center">
+      <p>&copy; 2026 Robert H. Engelhardt</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS bundle -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Live dark mode switch -->
+  <script>
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
+        document.documentElement.setAttribute('data-bs-theme', e.matches ? 'dark' : 'light');
+      });
+    }
+  </script>
+
 </body>
 
 </html>
