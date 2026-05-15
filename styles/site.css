@@ -1,5 +1,5 @@
 /* =========================================================
-   Site CSS — Robert H. Engelhardt — rheone.github.io
+   Site CSS — Robert H. Engelhardt — rheone.com
    ========================================================= */
 
 /* ─── Color system ───────────────────────────────────────── */
@@ -13,6 +13,9 @@
   --site-accent:        #1a6fa8;
   --site-accent-hover:  #14527f;
   --site-accent-subtle: #e8f1f9;
+  --site-preview:        #b45309;
+  --site-preview-subtle: #fffbeb;
+  --site-preview-border: #fde68a;
   --site-font-mono:     "Fira Code", "JetBrains Mono", "Lucida Console", "Courier New", monospace;
   --site-navbar-height: 56px;
 
@@ -34,6 +37,9 @@
   --site-accent:        #4db6ff;
   --site-accent-hover:  #80cfff;
   --site-accent-subtle: #0d2137;
+  --site-preview:        #fbbf24;
+  --site-preview-subtle: #1c1102;
+  --site-preview-border: #78350f;
 
   /* Override Bootstrap link colors for dark mode */
   --bs-link-color:       #4db6ff;
@@ -304,6 +310,74 @@ body {
   text-decoration: underline;
 }
 
+/* ─── Preview / coming-soon project cards ───────────────── */
+.project-card--preview {
+  border-style: dashed;
+  border-color: var(--site-preview-border);
+}
+
+.project-card--preview:hover {
+  border-color: var(--site-preview);
+  box-shadow: 0 0 0 1px var(--site-preview);
+}
+
+.project-card-preview-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--site-preview);
+  background: var(--site-preview-subtle);
+  border: 1px solid var(--site-preview-border);
+  border-radius: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Install snippet ────────────────────────────────────── */
+.install-snippet {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--site-bg);
+  border: 1px solid var(--site-border);
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.5rem 0.4rem 0.75rem;
+  margin-bottom: 0.875rem;
+}
+
+.install-command {
+  flex: 1;
+  font-family: var(--site-font-mono);
+  font-size: 0.82rem;
+  color: var(--site-text);
+  background: transparent;
+  border: none;
+  padding: 0;
+  user-select: all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.install-copy-btn {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--site-muted);
+  padding: 0.2rem 0.35rem;
+  border-radius: 0.25rem;
+  line-height: 1;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.install-copy-btn:hover {
+  color: var(--site-accent);
+  background-color: var(--site-accent-subtle);
+}
+
 /* ─── Tech pills ─────────────────────────────────────────── */
 .tech-pill {
   display: inline-block;
@@ -315,6 +389,42 @@ body {
   padding: 0.15rem 0.6rem;
   margin: 0.1rem;
   line-height: 1.6;
+}
+
+/* ─── GUN section header ────────────────────────────────── */
+.gun-section-header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--site-border);
+}
+
+.gun-section-header h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.375rem;
+  color: var(--site-text);
+}
+
+.gun-section-header .lead {
+  color: var(--site-muted);
+  font-size: 0.95rem;
+  margin-bottom: 0;
+}
+
+/* ─── GUN project cards ─────────────────────────────────── */
+.gun-card {
+  border: 1px solid var(--site-border);
+  border-left: 3px solid var(--site-muted);
+  background: var(--site-surface);
+  border-radius: 0.5rem;
+  padding: 1.25rem 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.gun-card-restricted {
+  font-size: 0.8rem;
+  color: var(--site-muted);
+  margin-bottom: 0.625rem;
 }
 
 /* ─── GUN project callout ────────────────────────────────── */
@@ -339,7 +449,8 @@ body {
     border-left: 1px solid #ccc;
   }
 
-  .project-card {
+  .project-card,
+  .gun-card {
     border: 1px solid #ccc;
     box-shadow: none;
   }

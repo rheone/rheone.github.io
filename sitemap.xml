@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rheone.github.io/</loc>
+    <loc>https://rheone.com/</loc>
     <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://rheone.github.io/index.html</loc>
+    <loc>https://rheone.com/resume.html</loc>
     <lastmod>2026-05-10</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://rheone.github.io/resume.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://rheone.github.io/projects.html</loc>
+    <loc>https://rheone.com/projects.html</loc>
     <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://rheone.github.io/attributions.html</loc>
+    <loc>https://rheone.com/attributions.html</loc>
     <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.30</priority>
   </url>
 </urlset>

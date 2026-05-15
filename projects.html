@@ -7,17 +7,20 @@
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231a6fa8'/><text x='50' y='72' font-family='sans-serif' font-size='64' font-weight='bold' text-anchor='middle' fill='white'>R</text></svg>">
   <title>Projects &mdash; Robert H. Engelhardt</title>
-  <meta name="description" content="Open-source software projects by Robert H. Engelhardt, including Arcus, Gulliver, NetDuid, and Chordly — developed at Sandia National Laboratories.">
+  <meta name="description" content="Open-source software projects by Robert H. Engelhardt, including Arcus, Gulliver, NetDuid, MacSharp, and Chordly — developed at Sandia National Laboratories.">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Projects — Robert H. Engelhardt">
   <meta property="og:description" content="Open-source software projects including Arcus, Gulliver, NetDuid, and Chordly — developed at Sandia National Laboratories.">
-  <meta property="og:image" content="https://rheone.github.io/images/avatar1024.png">
-  <meta property="og:url" content="https://rheone.github.io/projects.html">
+  <meta property="og:image" content="https://rheone.com/images/avatar1024.png">
+  <meta property="og:url" content="https://rheone.com/projects.html">
   <meta property="og:type" content="website">
 
+  <!-- Canonical -->
+  <link rel="canonical" href="https://rheone.com/projects.html">
+
   <!-- Author -->
-  <link type="text/plain" rel="author" href="https://rheone.github.io/humans.txt">
+  <link type="text/plain" rel="author" href="https://rheone.com/humans.txt">
 
   <!-- Dark mode: set before stylesheets to prevent flash -->
   <script>
@@ -102,15 +105,41 @@
           compare, and format DUIDs when working with DHCPv6 infrastructure, logging, or testing. Targets .NET
           Standard 2.0 and modern .NET runtimes with no runtime dependencies beyond the base class library.
         </p>
+        <div class="install-snippet">
+          <code class="install-command">dotnet add package NetDuid</code>
+          <button class="install-copy-btn" aria-label="Copy install command" data-copy="dotnet add package NetDuid">
+            <i class="fa-regular fa-copy" aria-hidden="true"></i>
+          </button>
+        </div>
         <div class="project-card-links">
           <a href="https://github.com/sandialabs/netduid" target="_blank" rel="noopener"
             aria-label="NetDuid GitHub repository">
             <i class="fa-brands fa-github fa-sm me-1" aria-hidden="true"></i>GitHub
           </a>
+          <a href="https://github.com/sandialabs/netduid" target="_blank" rel="noopener"
+            aria-label="NetDuid GitHub stars">
+            <img src="https://img.shields.io/github/stars/sandialabs/netduid?logo=github&label=stars"
+              alt="NetDuid GitHub stars" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
           <a href="https://www.nuget.org/packages/NetDuid" target="_blank" rel="noopener"
-            aria-label="NetDuid NuGet package">
+            aria-label="NetDuid NuGet downloads">
             <img src="https://img.shields.io/nuget/dt/netduid?logo=nuget&label=NuGet&color=blue"
               alt="NetDuid NuGet download count" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://www.nuget.org/packages/NetDuid" target="_blank" rel="noopener"
+            aria-label="NetDuid NuGet version">
+            <img src="https://img.shields.io/nuget/v/NetDuid?logo=nuget&label=version&color=blue"
+              alt="NetDuid NuGet version" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://github.com/sandialabs/netduid/actions/workflows/build.yml" target="_blank" rel="noopener"
+            aria-label="NetDuid build status">
+            <img src="https://img.shields.io/github/actions/workflow/status/sandialabs/netduid/build.yml?logo=github&label=build"
+              alt="NetDuid build status" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://github.com/sandialabs/netduid/commits/main" target="_blank" rel="noopener"
+            aria-label="NetDuid last commit">
+            <img src="https://img.shields.io/github/last-commit/sandialabs/netduid?logo=github&label=updated"
+              alt="NetDuid last commit date" loading="lazy" style="height:20px;vertical-align:middle;">
           </a>
         </div>
         <div>
@@ -120,6 +149,32 @@
           <span class="tech-pill">DHCPv6</span>
           <span class="tech-pill">RFC 8415</span>
           <span class="tech-pill">RFC 6355</span>
+          <span class="tech-pill">Apache 2.0</span>
+        </div>
+      </article>
+
+      <!-- MacSharp -->
+      <article class="project-card project-card--preview" id="macsharp" aria-labelledby="macsharp-title">
+        <div class="project-card-preview-tag">
+          <i class="fa-regular fa-clock fa-xs" aria-hidden="true"></i>Coming Soon
+        </div>
+        <h2 class="project-card-title" id="macsharp-title">
+          <i class="fa-solid fa-ethernet fa-sm me-2" style="color: var(--site-muted);" aria-hidden="true"></i>MacSharp
+        </h2>
+        <p class="project-card-desc">
+          A .NET micro library providing a robust, strongly-typed representation of MAC addresses. It includes
+          EUI-48 and EUI-64 formats as specified in IEEE 802 and RFC 7042. Designed for that need to parse, 
+          construct, compare, and format MAC addresses. Targets .NET Standard 2.0 and modern .NET runtimes 
+          with no runtime dependencies beyond the base class library.
+        </p>
+        <div>
+          <span class="tech-pill">C#</span>
+          <span class="tech-pill">.NET Standard 2.0</span>
+          <span class="tech-pill">MAC Address</span>
+          <span class="tech-pill">EUI-48</span>
+          <span class="tech-pill">EUI-64</span>
+          <span class="tech-pill">IEEE 802</span>
+          <span class="tech-pill">RFC 7042</span>
           <span class="tech-pill">Apache 2.0</span>
         </div>
       </article>
@@ -135,15 +190,41 @@
           functionality across five areas: Types, Comparers, Converters, Math, and Utilities. With over 79,000
           NuGet downloads, Arcus is widely used in network-facing applications across the .NET ecosystem.
         </p>
+        <div class="install-snippet">
+          <code class="install-command">dotnet add package Arcus</code>
+          <button class="install-copy-btn" aria-label="Copy install command" data-copy="dotnet add package Arcus">
+            <i class="fa-regular fa-copy" aria-hidden="true"></i>
+          </button>
+        </div>
         <div class="project-card-links">
           <a href="https://github.com/sandialabs/Arcus" target="_blank" rel="noopener"
             aria-label="Arcus GitHub repository">
             <i class="fa-brands fa-github fa-sm me-1" aria-hidden="true"></i>GitHub
           </a>
+          <a href="https://github.com/sandialabs/Arcus" target="_blank" rel="noopener"
+            aria-label="Arcus GitHub stars">
+            <img src="https://img.shields.io/github/stars/sandialabs/Arcus?logo=github&label=stars"
+              alt="Arcus GitHub stars" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
           <a href="https://www.nuget.org/packages/Arcus" target="_blank" rel="noopener"
-            aria-label="Arcus NuGet package">
+            aria-label="Arcus NuGet downloads">
             <img src="https://img.shields.io/nuget/dt/arcus?logo=nuget&label=NuGet&color=blue"
               alt="Arcus NuGet download count" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://www.nuget.org/packages/Arcus" target="_blank" rel="noopener"
+            aria-label="Arcus NuGet version">
+            <img src="https://img.shields.io/nuget/v/Arcus?logo=nuget&label=version&color=blue"
+              alt="Arcus NuGet version" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://github.com/sandialabs/Arcus/actions/workflows/build.yml" target="_blank" rel="noopener"
+            aria-label="Arcus build status">
+            <img src="https://img.shields.io/github/actions/workflow/status/sandialabs/Arcus/build.yml?logo=github&label=build"
+              alt="Arcus build status" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://github.com/sandialabs/Arcus/commits/main" target="_blank" rel="noopener"
+            aria-label="Arcus last commit">
+            <img src="https://img.shields.io/github/last-commit/sandialabs/Arcus?logo=github&label=updated"
+              alt="Arcus last commit date" loading="lazy" style="height:20px;vertical-align:middle;">
           </a>
         </div>
         <div>
@@ -169,15 +250,41 @@
           operations, bitwise shifting, and unsigned endian-aware arithmetic. Originally created to support Arcus, it
           has since grown into a standalone package with over 77,000 NuGet downloads.
         </p>
+        <div class="install-snippet">
+          <code class="install-command">dotnet add package Gulliver</code>
+          <button class="install-copy-btn" aria-label="Copy install command" data-copy="dotnet add package Gulliver">
+            <i class="fa-regular fa-copy" aria-hidden="true"></i>
+          </button>
+        </div>
         <div class="project-card-links">
           <a href="https://github.com/sandialabs/Gulliver" target="_blank" rel="noopener"
             aria-label="Gulliver GitHub repository">
             <i class="fa-brands fa-github fa-sm me-1" aria-hidden="true"></i>GitHub
           </a>
+          <a href="https://github.com/sandialabs/Gulliver" target="_blank" rel="noopener"
+            aria-label="Gulliver GitHub stars">
+            <img src="https://img.shields.io/github/stars/sandialabs/Gulliver?logo=github&label=stars"
+              alt="Gulliver GitHub stars" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
           <a href="https://www.nuget.org/packages/Gulliver" target="_blank" rel="noopener"
-            aria-label="Gulliver NuGet package">
+            aria-label="Gulliver NuGet downloads">
             <img src="https://img.shields.io/nuget/dt/Gulliver?logo=nuget&label=NuGet&color=blue"
               alt="Gulliver NuGet download count" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://www.nuget.org/packages/Gulliver" target="_blank" rel="noopener"
+            aria-label="Gulliver NuGet version">
+            <img src="https://img.shields.io/nuget/v/Gulliver?logo=nuget&label=version&color=blue"
+              alt="Gulliver NuGet version" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://github.com/sandialabs/Gulliver/actions/workflows/build.yml" target="_blank" rel="noopener"
+            aria-label="Gulliver build status">
+            <img src="https://img.shields.io/github/actions/workflow/status/sandialabs/Gulliver/build.yml?logo=github&label=build"
+              alt="Gulliver build status" loading="lazy" style="height:20px;vertical-align:middle;">
+          </a>
+          <a href="https://github.com/sandialabs/Gulliver/commits/main" target="_blank" rel="noopener"
+            aria-label="Gulliver last commit">
+            <img src="https://img.shields.io/github/last-commit/sandialabs/Gulliver?logo=github&label=updated"
+              alt="Gulliver last commit date" loading="lazy" style="height:20px;vertical-align:middle;">
           </a>
         </div>
         <div>
@@ -219,17 +326,69 @@
         </div>
       </article>
 
-      <!-- GUN projects note -->
-      <div class="gun-note mt-2">
-        <p class="mb-1" style="font-weight: 600; color: var(--site-text);">
-          <i class="fa-solid fa-lock fa-sm me-1" aria-hidden="true"></i>Government Use Notice (G.U.N.) Projects
-        </p>
-        <p class="mb-0">
-          Additional software — including the Reliable Automated File Transfer Service (RAFTS) and Mobile Credential
-          Manager (MCM) — was developed for and distributed within the DOE/NNSA ecosystem under the Government Use
-          Notice process. These projects are not publicly available. See the
-          <a href="resume.html#heading-gun">Résumé</a> for details.
-        </p>
+      <!-- GUN Projects section -->
+      <div class="mt-5 pt-3">
+        <hr style="border-color: var(--site-border); margin-bottom: 2rem;">
+        <header class="gun-section-header" aria-labelledby="gun-section-title">
+          <h2 id="gun-section-title">
+            <i class="fa-solid fa-lock fa-sm me-2" style="color: var(--site-muted);" aria-hidden="true"></i>Government Use Notice Projects
+          </h2>
+          <p class="lead">
+            Not all software created at Sandia reaches a public release. The <strong>Government Use Notice
+            (GUN)</strong> process is a DOE/NNSA mechanism that allows national laboratories to distribute software
+            internally across the federal ecosystem — to peer laboratories, agencies, and authorized contractors —
+            under restricted terms. GUN software is developed with government funding, serves government mission needs,
+            and remains within the government distribution network rather than being published under a public
+            open-source license.
+          </p>
+        </header>
+
+        <!-- RAFTS / TIDE -->
+        <article class="gun-card" id="rafts" aria-labelledby="rafts-title">
+          <div class="gun-card-restricted">
+            <i class="fa-solid fa-lock fa-xs me-1" aria-hidden="true"></i>Government Use Notice &mdash; Not publicly available
+          </div>
+          <h2 class="project-card-title" id="rafts-title">
+            <i class="fa-solid fa-right-left fa-sm me-2" style="color: var(--site-muted);" aria-hidden="true"></i>Reliable Automated File Transfer Service (RAFTS)
+          </h2>
+          <p class="project-card-desc">
+            A RESTful API-driven web interface service for transferring large data sets across multiple classified and unclassified
+            network security domains within the DOE/NNSA ecosystem. The suite includes Angular web interfaces,
+            multiple .NET C# projects, and automated processing scripts supporting cross-boundary data movement.
+            Later renamed <strong>TIDE</strong>.
+          </p>
+          <div>
+            <span class="tech-pill">C#</span>
+            <span class="tech-pill">.NET</span>
+            <span class="tech-pill">REST API</span>
+            <span class="tech-pill">Angular</span>
+            <span class="tech-pill">Cross-Domain</span>
+            <span class="tech-pill">Security Domains</span>
+          </div>
+        </article>
+
+        <!-- MCM -->
+        <article class="gun-card" id="mcm" aria-labelledby="mcm-title">
+          <div class="gun-card-restricted">
+            <i class="fa-solid fa-lock fa-xs me-1" aria-hidden="true"></i>Government Use Notice &mdash; Not publicly available
+          </div>
+          <h2 class="project-card-title" id="mcm-title">
+            <i class="fa-solid fa-id-card-clip fa-sm me-2" style="color: var(--site-muted);" aria-hidden="true"></i>Mobile Credential Manager (MCM)
+          </h2>
+          <p class="project-card-desc">
+            An ASP .NET web application enabling laboratory workforce members to self-manage derived Personal
+            Identity Verification (PIV) mobile credentials — as specified under Homeland Security Presidential
+            Directive 12 (HSPD-12) — for authentication to Sandia resources.
+          </p>
+          <div>
+            <span class="tech-pill">C#</span>
+            <span class="tech-pill">.NET</span>
+            <span class="tech-pill">ASP.NET MVC</span>
+            <span class="tech-pill">PIV</span>
+            <span class="tech-pill">HSPD-12</span>
+            <span class="tech-pill">Mobile Credentials</span>
+          </div>
+        </article>
       </div>
 
     </div>
@@ -254,6 +413,19 @@
         document.documentElement.setAttribute('data-bs-theme', e.matches ? 'dark' : 'light');
       });
     }
+  </script>
+
+  <!-- Install snippet copy buttons -->
+  <script>
+    document.querySelectorAll('.install-copy-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+          var icon = btn.querySelector('i');
+          icon.className = 'fa-solid fa-check';
+          setTimeout(function () { icon.className = 'fa-regular fa-copy'; }, 1500);
+        });
+      });
+    });
   </script>
 
 </body>

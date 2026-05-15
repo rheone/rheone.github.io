@@ -1,7 +1,15 @@
 Robert H. Engelhardt (he/him)
+Role: Application Developer, Computer Scientist
+Contact: rheone [at] gmail [dot] com
+Location: New Mexico, USA
 -----------------------------
 Application developer
 Computer Scientist
 Hobby Collector
 Novelty Seeker
 Insufferable Pedant
+
+/* SITE */
+Standards: HTML5, CSS3
+Components: Bootstrap 5, Font Awesome 6, Fira Code
+Hosted: GitHub Pages

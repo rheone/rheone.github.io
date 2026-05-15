@@ -2,7 +2,10 @@
 
 Distinguished Member of Technical Staff (DMTS) · R&D S&E, Computer Science
 
-**Email:** [rheone@gmail.com](mailto:rheone@gmail.com)
+**Location:** Albuquerque Area, NM  
+**Email:** [rheone@gmail.com](mailto:rheone@gmail.com)  
+**LinkedIn:** [linkedin.com/in/rheone](https://www.linkedin.com/in/rheone)  
+**Clearance:** Active DOE Q-Level
 
 ---
 
@@ -23,9 +26,10 @@ _July 2012 to Present_
 _July 2024 to Present_
 
 - Lead a portfolio of over 30 software products across 80-plus deployments, 3.9 million lines of code, and 8.8 billion database records, delivering mission-enabling capabilities for the laboratory, the inter-laboratory DOE/NNSA ecosystem, and the open-source community.
-- Direct the ongoing multi-year modernization of Sandia's custom DNS, DHCP, and IP Address Management (DDI/IPAM) network management system to introduce IPv6 and contemporary DNS capabilities, driving compliance with DOE federal IPv6 mandates and producing cascading improvements across the majority of Sandia's IT infrastructure.
-- Design and lead the migration of legacy IT Service Management (ITSM) integrations to a modernized ServiceNow REST API architecture for multiple Sandia technical management systems, improving reliability and reducing manual operational overhead.
-- Drive the planned decommission of multiple aging software systems, delivering modernized replacement solutions that reduce technical debt and improve long-term supportability.
+- Co-lead a team of 10 permanent software engineers and DevOps professionals, alongside a rotating cohort of interns, driving technical direction and delivery across the portfolio.
+- Directed the ongoing multi-year modernization of Sandia's custom DNS, DHCP, and IP Address Management (DDI/IPAM) network management system to introduce IPv6 and contemporary DNS capabilities, driving compliance with DOE federal IPv6 mandates and producing cascading improvements across the majority of Sandia's IT infrastructure.
+- Designed and lead the migration of legacy IT Service Management (ITSM) integrations to a modernized ServiceNow REST API architecture for multiple Sandia technical management systems, improving reliability and reducing manual operational overhead.
+- Drove the planned decommission of multiple aging software systems, delivering modernized replacement solutions that reduce technical debt and improve long-term supportability.
 
 #### Principal R&D S&E, Computer Science
 
@@ -33,7 +37,7 @@ _May 2020 to July 2024_
 
 - Established Software Bill of Materials (SBOM) generation as standard practice across the team's product portfolio, positioning Sandia proactively ahead of compliance requirements codified in Executive Order 14028 (Improving the Nation's Cybersecurity).
 - Designed and led cross-team implementation of a classified computing asset lifecycle management system alongside the hardware disposition team, improving observability into security-significant resources and enabling avoidance of future compliance incidents.
-- Managed project roadmaps, tasking, and delivery coordination for a cross-functional team of software developers, DevOps engineers, and interns across multiple concurrent software projects.
+- Managed project roadmaps, tasking, and delivery coordination for a cross-functional team of 10 software developers and DevOps engineers, alongside a rotating cohort of interns, across multiple concurrent software projects.
 - Served as Subject Matter Expert to laboratory networking infrastructure, IT infrastructure, and cybersecurity teams, resolving complex architectural and security concerns across multiple organizational boundaries.
 - Drove adoption of improved internal development practices including structured code reviews, automated test coverage expectations, and a mentorship program for early-career developers.
 
@@ -62,6 +66,8 @@ _June 2006 to July 2012_
 - Built and maintained a physical credential and badging management software system for government security personnel.
 - Designed and implemented a secure, remotely accessible data-sharing and information repository for NNSA First Responders and cross-departmental users.
 - Developed a training and qualification tracking system for government personnel.
+- Co-designed web based projects providing tooling such as asset management, document management, and inventory management.
+- Maintained and extended existing in house software projects in support of the Office of Secure Transportation, NA-42, and JTOT.
 
 ---
 
@@ -79,17 +85,19 @@ _June 2004 to June 2006_
 
 _Summer 2000 and Summer 2001_
 
-- Contributed to a Visual Basic application for nuclear proliferation data tracking (2001) and to a Borland C++ Builder Windows application for semiconductor fabrication design (2000).
+- Built a Visual Basic application for nuclear proliferation data tracking (2001) and to a Borland C++ Builder Windows application for semiconductor fabrication design (2000).
 
 ---
 
 ## Languages & Technologies
 
-**Languages:** C#, SQL, HTML, CSS, PowerShell  
-**Frameworks & Runtimes:** ASP.NET 4.8 – .NET 10, NHibernate  
-**APIs & Integration:** REST API Design and Implementation, ServiceNow  
-**DevOps & Tooling:** Git, Azure DevOps, CI/CD Pipelines  
-**Domains:** Software Architecture, DevSecOps, Application Security, Software Bill of Materials (SBOM), Network Infrastructure (DNS, DHCP, IPv6, IPAM)
+**Languages:** C#, T-SQL, HTML, CSS, PowerShell  
+**Frameworks & Runtimes:** ASP.NET 4.8 through .NET 10, ASP.NET MVC / Razor, NHibernate  
+**APIs & Integration:** REST API Design and Implementation, OpenAPI, Webhooks, JSON, XML, ServiceNow  
+**DevOps & Tooling:** Git, Azure DevOps, GitHub Actions, CI/CD Pipelines, ELK Stack, Obsidian, Confluence  
+**Testing:** TDD, Unit Testing, xUnit, NUnit, MSTest  
+**Practices:** Agile, Scrum, Mentorship, Public Speaking  
+**Domains:** Software Architecture, Application Design, DevSecOps, Application Security, Software Bill of Materials (SBOM), Network Infrastructure (DNS, DHCP, IPv6, IPAM, DDI), Knowledge Bases
 
 ---
 
@@ -176,7 +184,6 @@ Bachelor of Science, Computer Science — New Mexico Institute of Mining and Tec
 
 - Thunderbird Kudos — 2023
 - Thunderbird Kudos — 2022
-- Retention Bonus — 2022
 - Spot Award — ColdFusion Application Retirement (2022)
 - Employee Recognition Award (ERA) Nomination — Enterprise Cross Domain Solutions (2021)
 - ERA Nomination — Enterprise Person Application Transformation (2021)
@@ -204,5 +211,7 @@ Bachelor of Science, Computer Science — New Mexico Institute of Mining and Tec
 - New Mexico Beekeepers' Association Vice President — 2010
 
 ---
+
+Last updated: May 2026
 
 © 2026 Robert H. Engelhardt

@@ -1,2 +1,3 @@
 User-Agent: *
 Allow: /
+Sitemap: https://rheone.com/sitemap.xml
