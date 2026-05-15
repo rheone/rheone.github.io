@@ -28,7 +28,7 @@ _July 2024 to Present_
 - Lead a portfolio of over 30 software products across 80-plus deployments, 3.9 million lines of code, and 8.8 billion database records, delivering mission-enabling capabilities for the laboratory, the inter-laboratory DOE/NNSA ecosystem, and the open-source community.
 - Co-lead a team of 10 permanent software engineers and DevOps professionals, alongside a rotating cohort of interns, driving technical direction and delivery across the portfolio.
 - Directed the ongoing multi-year modernization of Sandia's custom DNS, DHCP, and IP Address Management (DDI/IPAM) network management system to introduce IPv6 and contemporary DNS capabilities, driving compliance with DOE federal IPv6 mandates and producing cascading improvements across the majority of Sandia's IT infrastructure.
-- Designed and lead the migration of legacy IT Service Management (ITSM) integrations to a modernized ServiceNow REST API architecture for multiple Sandia technical management systems, improving reliability and reducing manual operational overhead.
+- Designed and led the migration of legacy IT Service Management (ITSM) integrations to a modernized ServiceNow REST API architecture for multiple Sandia technical management systems, improving reliability and reducing manual operational overhead.
 - Drove the planned decommission of multiple aging software systems, delivering modernized replacement solutions that reduce technical debt and improve long-term supportability.
 
 #### Principal R&D S&E, Computer Science

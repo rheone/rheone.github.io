@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111827">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231a6fa8'/><text x='50' y='72' font-family='sans-serif' font-size='64' font-weight='bold' text-anchor='middle' fill='white'>R</text></svg>">
+  <link rel="apple-touch-icon" href="images/avatar256.png">
   <title>Projects &mdash; Robert H. Engelhardt</title>
   <meta name="description" content="Open-source software projects by Robert H. Engelhardt, including Arcus, Gulliver, NetDuid, MacSharp, and Chordly — developed at Sandia National Laboratories.">
 
@@ -15,6 +19,14 @@
   <meta property="og:image" content="https://rheone.com/images/avatar1024.png">
   <meta property="og:url" content="https://rheone.com/projects.html">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="rheone.com">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Projects — Robert H. Engelhardt">
+  <meta name="twitter:description" content="Open-source software projects including Arcus, Gulliver, NetDuid, and Chordly — developed at Sandia National Laboratories.">
+  <meta name="twitter:image" content="https://rheone.com/images/avatar1024.png">
 
   <!-- Canonical -->
   <link rel="canonical" href="https://rheone.com/projects.html">
@@ -47,6 +59,8 @@
 </head>
 
 <body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md site-navbar fixed-top" aria-label="Main navigation">
@@ -84,7 +98,7 @@
   </nav>
 
   <!-- Main content -->
-  <main class="container py-4 py-md-5">
+  <main id="main-content" class="container py-4 py-md-5">
     <div class="col-12 col-md-11 col-lg-10 col-xl-9 mx-auto">
 
       <!-- Page header -->
@@ -163,7 +177,7 @@
         </h2>
         <p class="project-card-desc">
           A .NET micro library providing a robust, strongly-typed representation of MAC addresses. It includes
-          EUI-48 and EUI-64 formats as specified in IEEE 802 and RFC 7042. Designed for that need to parse, 
+          EUI-48 and EUI-64 formats as specified in IEEE 802 and RFC 7042. Designed for applications that need to parse,
           construct, compare, and format MAC addresses. Targets .NET Standard 2.0 and modern .NET runtimes 
           with no runtime dependencies beyond the base class library.
         </p>
@@ -376,7 +390,7 @@
             <i class="fa-solid fa-id-card-clip fa-sm me-2" style="color: var(--site-muted);" aria-hidden="true"></i>Mobile Credential Manager (MCM)
           </h2>
           <p class="project-card-desc">
-            An ASP .NET web application enabling laboratory workforce members to self-manage derived Personal
+            An ASP.NET web application enabling laboratory workforce members to self-manage derived Personal
             Identity Verification (PIV) mobile credentials — as specified under Homeland Security Presidential
             Directive 12 (HSPD-12) — for authentication to Sandia resources.
           </p>

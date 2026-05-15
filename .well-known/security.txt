@@ -1,0 +1,7 @@
+# Security contact for rheone.com
+# https://securitytxt.org/
+
+Contact: mailto:rheone@gmail.com
+Expires: 2027-05-15T00:00:00Z
+Preferred-Languages: en
+Canonical: https://rheone.com/.well-known/security.txt

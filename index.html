@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111827">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%231a6fa8'/><text x='50' y='72' font-family='sans-serif' font-size='64' font-weight='bold' text-anchor='middle' fill='white'>R</text></svg>">
+  <link rel="apple-touch-icon" href="images/avatar256.png">
   <title>Robert H. Engelhardt</title>
   <meta name="description" content="Robert H. Engelhardt — Distinguished Member of Technical Staff at Sandia National Laboratories. Software architect, open-source author, and conference speaker supporting national security missions.">
 
@@ -15,6 +19,8 @@
   <meta property="og:image" content="https://rheone.com/images/avatar1024.png">
   <meta property="og:url" content="https://rheone.com/">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="rheone.com">
+  <meta property="og:locale" content="en_US">
 
   <!-- Twitter card -->
   <meta name="twitter:card" content="summary">
@@ -50,9 +56,40 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- Site styles -->
   <link rel="stylesheet" href="styles/site.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Robert H. Engelhardt",
+    "url": "https://rheone.com/",
+    "email": "rheone@gmail.com",
+    "image": "https://rheone.com/images/avatar1024.png",
+    "jobTitle": "Distinguished Member of Technical Staff",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Sandia National Laboratories",
+      "url": "https://www.sandia.gov"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "New Mexico Institute of Mining and Technology"
+    },
+    "sameAs": [
+      "https://github.com/rheone",
+      "https://www.linkedin.com/in/rheone",
+      "https://mastodon.social/@rheone",
+      "https://bsky.app/profile/rheone.bsky.social",
+      "https://stackoverflow.com/users/1090923/rheone"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-md site-navbar fixed-top" aria-label="Main navigation">
@@ -90,7 +127,7 @@
   </nav>
 
   <!-- Main content -->
-  <main>
+  <main id="main-content">
 
     <!-- Hero -->
     <section class="hero-section" aria-label="Introduction">
