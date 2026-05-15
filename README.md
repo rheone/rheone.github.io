@@ -28,3 +28,4 @@ Prior to his tenure at SNL, he contributed his expertise to [Honeywell Federal M
 Robert resides in [New Mexico](https://www.nm.gov/) where he shares his home with four [cats](https://en.wikipedia.org/wiki/Cat) and maintains a [small](https://www.thesaurus.com/browse/small) flock of retired [chickens](https://en.wikipedia.org/wiki/Chicken) on his [approximately one-acre property](https://www.wolframalpha.com/input?key=&i=about+one+acre).
 
 Outside of his professional life Robert's interests include binging [audiobooks](https://en.wikipedia.org/wiki/Reel-to-reel_audio_tape_recording) on [long walks](https://maps.app.goo.gl/9pjPokohv1dF4juf8), indulging his [hobby of collecting hobbies](https://www.google.com/search?q=recursion), and nurturing his unsatiated curiosity, which is a driving force in both his personal and professional explorations.
+
